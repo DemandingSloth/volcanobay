@@ -100,3 +100,41 @@ for _, name in pairs(types) do
 		}
 	})
 end
+
+
+-- Provide Crafting recipe for crystal armor. 
+minetest.register_craft({
+	output = '3d_armor:boots_crystal',
+	recipe = {
+		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
+		{'default:mese_crystal', '', 'default:mese_crystal'},
+		{'', '', ''},
+	}
+})
+
+minetest.register_craft({
+	output = '3d_armor:helmet_crystal',
+	recipe = {
+		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
+		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
+		{'', '', ''},
+	}
+})
+
+minetest.register_craft({
+	output = '3d_armor:chestplate_crystal',
+	recipe = {
+		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
+		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
+		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
+	}
+})
+
+minetest.register_craft({
+	output = '3d_armor:leggings_crystal',
+	recipe = {
+		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
+		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
+		{'default:mese_crystal', '', 'default:mese_crystal'},
+	}
+})
