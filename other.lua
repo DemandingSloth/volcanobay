@@ -101,7 +101,6 @@ for _, name in pairs(types) do
 	})
 end
 
-
 -- Provide Crafting recipe for crystal armor. 
 minetest.register_craft({
 	output = '3d_armor:boots_crystal',
@@ -136,5 +135,15 @@ minetest.register_craft({
 		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
 		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
 		{'default:mese_crystal', '', 'default:mese_crystal'},
+	}
+})
+
+if minetest.get_modpath('shields') ~= nil then
+    minetest.register_craft({
+	output = 'shields:shield_crystal,
+	recipe = {
+		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
+		{'default:mese_crystal', 'dye:blue', 'default:mese_crystal'},
+		{'', 'default:mese_crystal', ''},
 	}
 })

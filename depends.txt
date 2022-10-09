@@ -2,6 +2,7 @@ default
 bakedclay
 colouredstonebricks
 wool
+shields?
 moreores?
 farming_plus?
 moreblocks?

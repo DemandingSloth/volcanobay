@@ -1,0 +1,6 @@
+name = volcanobay
+title = volcanobay
+depends = default, bakedclay, colouredstonebricks, wool
+optional_depends = shields, moreores, farming_plus, moreblocks, moretrees, snow, landrush, homedecor, cottages, drop_on_death, fishing, castle, mesecons_doors
+description = Server mods for volcanobay
+license = MIT
